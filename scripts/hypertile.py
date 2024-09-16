@@ -1,16 +1,10 @@
-import gradio as gr
-
-from modules import scripts
-
-from modules.ui_components import InputAccordion
-
-
-
-
+#   updated for Forge2, based on HyperTile for Forge, based on ...
 # https://github.com/comfyanonymous/ComfyUI/blob/master/nodes.py 
-
 #Taken from: https://github.com/tfernd/HyperTile/
 
+import gradio as gr
+from modules import scripts
+from modules.ui_components import InputAccordion
 import math
 from einops import rearrange
 # Use torch rng for consistency across generations
@@ -77,7 +71,7 @@ class HyperTileForForge(scripts.Script):
     sorting_priority = 13.5
 
     def title(self):
-        return "HyperTile Integrated"
+        return "HyperTile"
 
     def show(self, is_img2img):
         return scripts.AlwaysVisible
